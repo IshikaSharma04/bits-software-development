@@ -1,50 +1,53 @@
+================================================================================
 Git Commands Documentation
 Course: Software Development
 Assignment: Git & GitHub Workflow
-
+Student Name: Ishika Sharma
+Roll No: 02536
 ================================================================================
-Command: git init -b main
-Explanation: Initializes a new local Git repository in the current directory and sets 'main' as the default branch name.
 
-Command: git config user.name "IshikaSharma04"
-Explanation: Configures the username for author attribution on all commits within the local repository.
+1. git init -b main
+   Initializes a new local Git repository in the current folder and sets 'main' as the default branch.
 
-Command: git config user.email "ishika.24bcs10352@sst.scaler.com"
-Explanation: Sets the author email associated with the user's GitHub account for commit logging.
+2. git config user.name "IshikaSharma04"
+   Sets my GitHub username as the author for commits in this repository.
 
-Command: git status
-Explanation: Displays the state of the working directory and staging area, showing tracked, untracked, and modified files.
+3. git config user.email "ishika.24bcs10352@sst.scaler.com"
+   Configures my student email address associated with my GitHub account.
 
-Command: git add index.html about.html
-Explanation: Stages the specified files, adding their current content to the Git staging index for the next commit.
+4. git status
+   Checks the current status of the repository, showing untracked, staged, or modified files.
 
-Command: git commit -m "Initial commit: Add index.html and about.html"
-Explanation: Records the staged snapshots into the Git repository history with an informative commit message.
+5. git add index.html about.html
+   Stages index.html and about.html so they are ready to be included in the next commit.
 
-Command: git branch feature
-Explanation: Creates a new branch named 'feature' pointing to the current commit without switching to it.
+6. git commit -m "Initial commit: Add index.html and about.html"
+   Saves the staged files to the repository history with an initial commit message.
 
-Command: git checkout feature
-Explanation: Switches the working environment and HEAD pointer to the specified 'feature' branch.
+7. git branch feature
+   Creates a new branch named 'feature' from the current commit.
 
-Command: git checkout main
-Explanation: Switches the working environment and HEAD pointer back to the 'main' branch.
+8. git checkout feature
+   Switches the working directory to the 'feature' branch.
 
-Command: git merge --no-ff feature -m "Merge branch 'feature' into main"
-Explanation: Merges changes from the 'feature' branch into the active 'main' branch, creating an explicit merge commit.
+9. git checkout main
+   Switches back to the 'main' branch from the feature branch.
 
-Command: git log --oneline --graph --all
-Explanation: Displays a visual ASCII graph of commit history across all branches with one-line summaries for each commit.
+10. git merge --no-ff feature -m "Merge branch 'feature' into main"
+    Merges the changes from the 'feature' branch into the 'main' branch with an explicit merge commit.
 
-Command: git reset HEAD~1
-Explanation: Undoes the most recent commit by moving HEAD back one step, preserving file modifications in the working tree as unstaged changes.
+11. git log --oneline --graph --all
+    Shows the commit history as a graph with one-line summaries to display all commits and branch activity.
 
-Command: git remote add origin git@github.com:IshikaSharma04/bits-software-development.git
-Explanation: Links the local repository to the remote GitHub repository under the alias 'origin'.
+12. git reset HEAD~1
+    Undoes the last commit by moving HEAD back by one commit, keeping the changes in the working directory as unstaged.
 
-Command: git push -u origin main
-Explanation: Pushes the local 'main' branch commits to the remote repository on GitHub and sets up upstream tracking.
+13. git remote add origin git@github.com:IshikaSharma04/bits-software-development.git
+    Connects the local repository to my public GitHub repository.
 
-Command: git push origin feature
-Explanation: Pushes the 'feature' branch to GitHub to make all branching and commit history visible remotely.
+14. git push -u origin main
+    Pushes the local commits on the main branch to GitHub and sets up tracking.
+
+15. git push origin feature
+    Pushes the feature branch to GitHub so the branch history is visible on GitHub.
 ================================================================================
