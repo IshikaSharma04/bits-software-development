@@ -1,0 +1,50 @@
+Git Commands Documentation
+Course: Software Development
+Assignment: Git & GitHub Workflow
+
+================================================================================
+Command: git init -b main
+Explanation: Initializes a new local Git repository in the current directory and sets 'main' as the default branch name.
+
+Command: git config user.name "IshikaSharma04"
+Explanation: Configures the username for author attribution on all commits within the local repository.
+
+Command: git config user.email "ishika.24bcs10352@sst.scaler.com"
+Explanation: Sets the author email associated with the user's GitHub account for commit logging.
+
+Command: git status
+Explanation: Displays the state of the working directory and staging area, showing tracked, untracked, and modified files.
+
+Command: git add index.html about.html
+Explanation: Stages the specified files, adding their current content to the Git staging index for the next commit.
+
+Command: git commit -m "Initial commit: Add index.html and about.html"
+Explanation: Records the staged snapshots into the Git repository history with an informative commit message.
+
+Command: git branch feature
+Explanation: Creates a new branch named 'feature' pointing to the current commit without switching to it.
+
+Command: git checkout feature
+Explanation: Switches the working environment and HEAD pointer to the specified 'feature' branch.
+
+Command: git checkout main
+Explanation: Switches the working environment and HEAD pointer back to the 'main' branch.
+
+Command: git merge --no-ff feature -m "Merge branch 'feature' into main"
+Explanation: Merges changes from the 'feature' branch into the active 'main' branch, creating an explicit merge commit.
+
+Command: git log --oneline --graph --all
+Explanation: Displays a visual ASCII graph of commit history across all branches with one-line summaries for each commit.
+
+Command: git reset HEAD~1
+Explanation: Undoes the most recent commit by moving HEAD back one step, preserving file modifications in the working tree as unstaged changes.
+
+Command: git remote add origin git@github.com:IshikaSharma04/bits-software-development.git
+Explanation: Links the local repository to the remote GitHub repository under the alias 'origin'.
+
+Command: git push -u origin main
+Explanation: Pushes the local 'main' branch commits to the remote repository on GitHub and sets up upstream tracking.
+
+Command: git push origin feature
+Explanation: Pushes the 'feature' branch to GitHub to make all branching and commit history visible remotely.
+================================================================================
